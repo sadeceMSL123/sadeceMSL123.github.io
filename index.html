@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeni Kaymakdere</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            ;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 1.5;
+            background-color: #fff;
+        }
+
+        .container {
+            width: 1140px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+
+        #logo-box .logo {
+            background-color: #fff;
+            font-weight: 700;
+            font-size: 3.2rem;
+            float: right;
+        }
+
+        .text-uppercase {
+            text-transform: uppercase;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /*Navbars*/
+
+        nav {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #2C3E4F;
+            color: #fff;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            position: fixed;
+            width: 100%;
+            z-index: 900;
+        }
+
+        #nav-links {
+            float: right;
+            height: 80px;
+        }
+
+        #nav-link.nav-item {
+            float: left;
+            margin: 0.5rem;
+        }
+
+        #logo-box {
+            float: left;
+            padding-top: 0.5rem;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        i {
+            color: #fff;
+            width: 75px;
+            display: block;
+            transition: color 0.4s;
+
+        }
+
+        i:hover {
+            color: #1ABC9C;
+        }
+
+        header {
+            background-color: #1ABC9C;
+            height: 700px;
+            padding-top: calc(181px + 6rem);
+            text-align: center;
+        }
+
+        .img-fluid {
+            max-width: 240px;
+            height: auto;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        header h1 {
+            color: #fff;
+            font-size: 4rem;
+        }
+
+        .star-light,
+        .star-dark {
+            border: none;
+            border-top: 0.4rem solid #fff;
+            max-width: 25rem;
+            border-radius: 10px;
+            margin: 2.5rem auto;
+            overflow: visible;
+            height: 0;
+        }
+
+        .star-light::after,
+        .star-dark::after {
+            content: "\2668";
+            font-weight: 900;
+            font-size: 3.2rem;
+            top: -55px;
+            padding: 0 8px;
+            position: relative;
+        }
+
+        header h2 {
+            color: #fff;
+            font-size: 2.4rem;
+            font-family: font-family 'Lato', sans-serif;
+            font-weight: 300;
+        }
+
+        #doga {
+            height: 800px;
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        #doga h2 {
+            font-size: 4.8rem;
+            color: #2C3E4F;
+        }
+
+        hr.star-light {
+            border-color: #fff;
+        }
+
+        hr.star-dark {
+            border-color: #2C3E4F;
+        }
+
+        .star-light::after {
+            color: black;
+            overflow: visible;
+
+        }
+
+        .star-dark::after {
+            color: #2C3E4F;
+            background-color: #fff;
+        }
+
+        .col {
+            float: right;
+            width: 33.33%;
+            padding: 20px;
+        }
+
+        .doga-item {}
+
+        .img-fluid-p {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+        }
+    
+        h3{
+            color: #2C3E4F;
+
+        }
+  
+        #about-text{
+            text-align:left;
+        }
+        #about-text.left{
+            float: left;
+            width: 50%;
+            padding-right: 2rem;
+            padding-left: 23rem;
+        }
+        .text{
+            color: #2C3E4F;
+            text-decoration: underline #1ABC9C;
+            display: block;
+        }
+        button{
+          color: #fff;
+          background-color: #1ABC9C;
+          border: none;
+          font-size: 40px; 
+        }
+       
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container clearfix">
+            <div id="logo-box"> <a href="#" class="logo text-uppercase">YENİ KAYMAKDERE RESTORANTI</a></div>
+
+            <div id="nav-links">
+                <ul>
+                    <li class="nav-item"><a href="https://www.instagram.com/explore/tags/kaymakdere/"
+                            class="nav-link"><i class="fa-brands fa-instagram"></i> </a></li>
+                </ul>
+
+                <ul>
+                    <li class="nav-item"><a
+                            href="https://tr.foursquare.com/v/kaymak-dere-restaurant/5386496b498e94fb7583fed4"
+                            class="nav-link"> <i class="fa-brands fa-foursquare"></i>></i></a></li>
+                </ul>
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+    </nav>
+    <header>
+        <div class="container"></div>
+        <img src="saw2.png" alt="" class="img-fluid" id="images">
+
+        <h1>Çeşitli Yemek Türleri </h1>
+        <hr class="star-light">
+        <h2>Doğanın İçinde Muhteşem Yemeklerle</h2>
+    
+      <button><a href="#btn" style="color:#fff">Menüye Gitmek İçin Tıklayınız</a></button>
+    
+    </header>
+
+
+    <header>
+        <section id="doga">
+            <div class="container"></div>
+            <h2 class="text-uppercase">Muhteşem Doğası</h2>
+            <hr class="star-dark">
+            <div class="doga-images" class="clear-fix">
+
+                <div class="col">
+
+                    <div class="doga-item">
+                        <a href="#"><img class="img-fluid-p" src="doğa1.jpg" alt=""></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <div class="doga-item">
+                    <a href="#"><img class="img-fluid-p" src="doğa2.jpg" alt=""></a>
+                </div>
+
+            </div>
+
+            </div>
+
+
+            <div class="col">
+
+                <div class="doga-item">
+                    <a href="#"><img class="img-fluid-p" src="doğa 3.jpg" alt=""></a>
+                </div>
+
+            </div>
+
+            </div>
+
+            <div class="col">
+
+                <div class="doga-item">
+                    <a href="#"><img class="img-fluid-p" src="doğa4.jpg" alt=""></a>
+                </div>
+
+            </div>
+            <div class="col">
+
+                <div class="doga-item">
+                    <a href="#"><img class="img-fluid-p" src="doğa5.jpg" alt=""></a>
+                </div>
+
+            </div>
+            </div>
+
+            <div class="col">
+
+                <div class="doga-item">
+                <a href=""></a>
+                </div>
+
+            </div>
+
+            </div>
+
+
+            <div class="col">
+
+                <div class="doga-item">
+                    <a href="#"><img class="img-fluid-p" src="yenidoğa6.jpg" alt=""></a>
+                </div>
+
+            </div>
+
+            </div>
+            
+                <div class="container"></div>
+                <h2 class="text-uppercase">Çeşitli Yemekler</h2>
+                <hr class="star-dark" id="btn">
+                <div class="doga-images" class="clear-fix">
+                   
+                    <div class="col">
+
+                        <div class="doga-item">
+                            <a href="#"><img class="img-fluid-p" src="tavuk teneke.jpg" alt=""></a>
+                            <h3>Tenekede Tavuk</h3></div>
+                        
+                        
+                    </div>
+                    <div class="col">
+
+                        <div class="doga-item">
+                            <a href="#"><img class="img-fluid-p" src="tavuk teneke.jpg" alt=""></a>
+                            <h3>Tenekede Tavuk</h3></div>
+                        
+                        
+                    </div>
+                    <div class="col">
+
+                        <div class="doga-item">
+                            <a href="#"><img class="img-fluid-p" src="tavuk teneke.jpg" alt=""></a>
+                            <h3>Tenekede Tavuk</h3></div>
+                        
+                        
+                    </div>
+                    <div class="col">
+
+                        <div class="doga-item">
+                            <a href="#"><img class="img-fluid-p" src="tavuk teneke.jpg" alt=""></a>
+                            <h3>Tenekede Tavuk</h3></div>
+                        
+                        
+                    </div>
+                    <div class="col">
+
+                        <div class="doga-item">
+                            <a href="#"><img class="img-fluid-p" src="tavuk teneke.jpg" alt=""></a>
+                            <h3>Tenekede Tavuk</h3></div>
+                        
+                        
+                    </div>
+                    <div class="col">
+
+                        <div class="doga-item">
+                            <a href="#"><img class="img-fluid-p" src="kahvaltı.jpg" alt=""></a>
+                            <h3>Kahvaltı Sofrası</h3></div>
+                        
+                        
+                    </div>
+                 </div>
+       
+       
+                 <div class="container"></div>
+                 <h2 class="text-uppercase">Restoran Hakkında</h2>
+                 <hr class="star-dark">
+                    <div id="about-text" class="clearfix">
+                        <div class="left">
+                           <ul>
+                               <li class="text" style="font-size:3rem">
+                                Restoranımız 2009 Yılında Açılmıştır<br>
+                               Restoranımız Ekmelettin GÖZCÜ Tarafında Açılmıştır <br>
+                               Haftanın Tüm GÜnleri Açıktır <br>
+                                Hafta Sonları Canlı Müzik Olmaktadır <br>
+                                Telefon No:0511 111 1111 <br>
+                                Elvanpazarcık Tarafında Zonguldak Kent Ormanının 50 Metre ilerisindedir <br>
+                                Tam Adres
+                            
+                            </li>
+
+                            </ul>
+                          
+
+                        </div>
+
+                        <p class="text" >
+
+                    </div>
+
+
+
+
+
+                 <div class="doga-images" class="clear-fix">
+       
+                  
+
+
+                </section>
+ 
+              
+
+
+
+    </header>
+
+
+
+</body>
+
+</html>
